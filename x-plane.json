@@ -1,0 +1,131 @@
+{
+    0: ["f-act, /sec","f-sim, /sec","frame, time","cpu, time","gpu, time","grnd, ratio","flit, ratio"],//frame rate
+    1: ["real, time","totl, time","missn, time","timer, time","zulu, time","local, time","hobbs, time"],//times
+    2: ["explo, DIM","explo, USE","cratr, DIM","cratr, USE","puffs, TOT","puffs, VIS","tris, vis","q, depth"],//sim stats
+    3: ["Vind, kias","Vind, keas","Vtrue, ktas","Vtrue, ktgs","Vind, mph","Vtrue, mphas","Vtrue, mphgs"], //speeds
+    4: ["Mach, ratio","VVI, fpm","Gload, norml","Gload, axial","Gload, side"], //Aircraft Mach speeds, vertical velocity, and g-loads
+    5: ["SLprs, inHG","SLtmp, degC","wind, speed","wind, dir","trb, locl","prec, locl","hail, locl"], //Atmosphere: weather
+    6: ["AMprs, inHG","AMtmp, degC","LEtmp, degC","dens, ratio","A, ktas","Q, psf","gravi, fts2"], //Atmosphere: aircraft
+    7: ["baro, inHG","edens, part","vacum, ratio","elec, ratio","AHRS, ratio"],//System Pressure
+    8: ["elev, yoke1","ailrn, yoke1","ruddr, yoke1"],//Joystick aileron, elevator, and rudder input
+    9: ["vect, rqst","sweep, rqst","incid, rqst","dihed, rqst","retra, rqst","water, jetts"], //Other flight controls
+    10: ["elev, astab","ailrn, astab","ruddr, astab"],//Artificial stability inputs for aileron, elevator, and rudder
+    11: ["elev, surf","ailrn, surf","ruddr, surf","nwhel, steer"],//Flight control deflections for aileron, elevator, and rudder
+    12: ["sweep, 1, deg","sweep, 2, deg","sweep, h, deg","vect, ratio","sweep, ratio","incid, ratio","dihed, ratio","retra, ratio"],//Wing sweep and thrust vectoring
+    13: ["trim, elev","trim, ailrn","trim, ruddr","flap, handl","flap, postn","slat, ratio","sbrak, handl","sbrak, postn"],//Trim, flaps, slats, and speedbrakes
+    14: ["gear, 0/1","wbrak, part","lbrak, part","rbrak, part"],//Landing gear and brakes 
+    15: ["L, ftlb","M, ftlb","N, ftlb","Q, rad/s","P, rad/s","R, rad/s"],//Angular moments
+    16: ["pitch, deg","roll, deg","hding, true","hding, mag"],//Pitch, roll, headings
+    17: ["alpha, deg","beta, deg","hpath, deg","vpath, deg","slip, deg"],//Angle of attack, sideslip, and paths
+    18: ["mag, comp","mavar, deg"],//Magnetic compass
+    19: ["lat, deg","lon, deg","alt, ftmsl","alt, ftagl","on, runwy","alt, ind","lat, south","lon, west"],//Latitude, longitude, and altitude
+    20: ["X, m","Y, m","Z, m","vX, m/s","vY, m/s","vZ, m/s","dist, ft","dist, nm"],//Location, velocity, and distance traveled
+    21: ["lat n, deg"],//Latitude for all aircraft
+    22: ["lon n, deg"],//Longitude for all aircraft
+    23: ["alt n, ftmsl"],//Altitude for all aircraft
+    24: ["thron, part"],//Commanded Throttle
+    25: ["thron, part"],//Actual Throttle
+    26: ["moden, 0123"],//Engine or propeller mode
+    27: ["propn, set"], //Propeller settings
+    28: ["mixtn, ratio"], //Mixture settings
+    29: ["heatn, ratio"], //Carburetor heat setting
+    30: ["cowln, set"],//Cowl flap setting
+    31: ["magnn, set"],//Magneto settings
+    32: ["starn, sec"],//Starter timeout
+    33: ["power, n, hp"],//Engine n’s power, in horsepower.
+    34: ["thrst, n, lb"],//Engine thrust
+    35: ["trq n, ftlb"],//Engine torque
+    36: ["rpm n, engin"],//Engine RPM
+    37: ["rpm n, prop"],//Propeller RPM
+    38: ["ptchn, deg"],//Propeller pitch 
+    39: ["pwash, kt"],//Slipstream/propwash/jetwash
+    40: ["N1 n, pcnt"],//N1
+    41: ["N2 n, pcnt"],//N2
+    42: ["MP n, inhg"],//Manifold pressure
+    43: ["EPR n, part"],//Engine pressure ratio
+    44: ["FF n, lb/h"],//Fuel flow
+    45: ["ITT n, deg"],//Interstage turbine temperature
+    46: ["EGT n, deg"],//Exhaust gas temperature 
+    47: ["CHT n, deg"],//Cylinder head temperature
+    48: ["OILPn, psi"],//Oil pressure
+    49: ["OILTn, deg"],//Oil temperature
+    50:["FUEPn, psi"],//Fuel pressure
+    51:["genrn, amp"],//Generator amperage
+    52:["battn, amp"],//Battery amperage
+    53:["battn, volt"],//Battery voltage
+    54:["pumpn, 0/1"],//Fuel pump on/off
+    55:["idlen 0/1"],//Idle speed lo/hi
+    56:["battn, 0/1"],//Battery on/off
+    57:["genrn, 0/1"],//Generator on/off
+    58:["invrn, 0/1"],//Inverter on/off
+    59:["fadec, 0/1"],//FADEC on/off
+    60:["ignin, 0/1"],//Igniter on/off
+    61:["fuel, n lb"],//Fuel weights
+    62:["empty, lb","payld, lb","fuel, totlb","jetti, lb","curnt, lb","maxim, lb","cg, ftref"],//Payload weights and center of gravity
+    63:["lift, lb","drag, lb","side, lb"],//Aerodynamic forces, in wind axes
+    64:["norml, lb","axial, lb","side, lb"],//Engine forces
+    65:["gear, lb"],//Landing gear vertical force 
+    66:["gear, rat"],//Landing gear deployment
+    67:["L/D, ratio","cl, total","cd, total","L/D, *etaP"],//Lift-to-drag ratio and coefficients
+    68:["Peffn, ratio"],//Propeller efficiency
+    69:["Lailn,n,deg","Railn, n, deg"],//Aileron deflections
+    70:["Lsplr,n, deg","Rsplr, n, deg"],//Roll spoiler deflection
+    71:["elevn, deg"],//Elevator deflections
+    72:["rudrn, deg"],//Rudder deflection
+    73:["Lyawb, deg","Ryawb, deg"],//Yaw brake deflections
+    74:["pitch, lb","roll, lb","hdng, lb","l-brk, lb","r-brk, lb"],//Control forces
+    75:["vertn, tvect"],//Total vertical thrust vectors
+    76:["pitch, cycli"],//Pitch cyclic disc tilts
+    77:["roll, cycli"],//Roll cyclic disc tilts
+    78:["pitch, flap"],//Pitch cyclic flapping
+    79:["roll, flap"],//Roll cyclic flapping
+    80:["wingn, L cl*","wingn, R cl*"],//Ground effect (lift) from wings
+    81:["wingn, Lcdi*","wingn, Rcdi*"],//Ground effect (drag) from wings
+    82:["wingn, wash*"],//Ground effect (wash) from wings
+    83:["hstab, L cl*","hstab, R cl*","vstb1, cl*"],//Ground effect (lift) from stabilizers
+    84:["hstab, Lcdi*","hstab, Rcdi*","vstbn, cdi*"],//Ground effect (drag) from stabilizers
+    85:["hstab, wash*","vstbn, wash*"],//Ground effect (wash) from stabilizers
+    86:["propn, cl*"],//Ground effect (lift) from propellers
+    87:["propn, cdi*"],//Ground effect (drag) from propellers
+    88:["wingn, lift"],//Wing lift
+    89:["wingn, drag"],//Wing drag
+    90:["hstab, lift","vstbn, lift"],//Stabilizer lift
+    91:["hstab, drag","vstbn, drag"],//Stabilizer drag
+    93:["COM n, freq","COM n, stby","COM, xmt"],//COM 1/2 frequency
+    94:["NAV n, freq","NAV n, stby","NAV n, type"],//NAV 1/2 frequency
+    95:["NAV n, OBS","NAV n, s-crs","NAV n, flag"],//NAV 1/2 OBS
+    96:["NAV n, n-typ","NAV n, to-fr","NAV n, m-crs","NAV n, r-brg","NAV n, dme-d","NAV n, h-def","NAV n, v-def"],//NAV n deflections
+    97:["ADF n, freq","ADF n, card","ADF n, r-brg","ADF n, n-typ"],//ADF 1/2 status
+    98:["DME, nav01	•DME, mode","DME, found","DME, dist","DME, speed","DME, time","DME, n-typ","DME–3, freq"],//DME status
+    99:["GPS, mode","GPS, index","dist, nm","OBS, mag","crs, mag","rel, brng","hdef, dots","vdef, dots"],//GPS status
+    100:["trans, mode","trans, sett","trans, ID","trans, inter"],//Transponder status 
+    101:["OM, morse","MM, morse","IM, morse","audio, activ"],//Marker status
+    102:["avio, 0/1","nav, lite","beacn, lite","strob, lite","land, lite","taxi, lite"],//Switches 1: electrical
+    103:["ECAM, mode","EFIS, sel n","HSI, sel n","HSI, arc","map, r-sel","map, range"],//Switches 2: EFIS
+    104:["ap, src","fdir, mode","fdir, ptch","fdir, roll","HUD, power","HUD, brite"],//Switches 3: Autopilot, flight director, and head-up display
+    105:["deice, all","deice, inlet","deice, prop","deice, windo","deice-n, pitot","deice, AOA","deice, wing"],//Switches 4: anti-ice
+    106:["alt, airn","auto, ignit","manul, ignit","l-eng, tank","r-eng, tank"],//Switches 5: anti-ice/fuel
+    107:["prero, engag","clutc, ratio","art, ptch","art, roll","yaw, damp","auto, brake"],//Switches 6: clutch and artificial stability
+    108:["tot, energ","radal, feet","prop, sync","fethr, mode","puffr, power","water, scoop","arrst, hook","chute, deply"],//Switches 7: miscellaneous
+    109:["mast, cau","mast, war","mast, accp","auto, disco","low, vacum","low, volt","fuel, quant","hyd, press"],//Annunciators: general
+    110:["yawda, on","sbrk, on","GPWS, warn","ice, warn","pitot, off","cabin, althi","afthr, arm","ospd, time"],//Annunciators: general
+    111:["fuel, press","oil, press","oil, temp","inver, warn","gener, warn","chip, detec","engin, fire","ignit, 0/1"],//Annunciators: engine
+    112:["nav, arm","alt, arm","app, arm","vnav, enab","vnav, arm","vnav, time","gp, enabl","app, typ"],//Armed autopilot functions
+    113:["auto, throt","mode, hding","mode, alt","bac, 0/1","app,","sync, butn"],//Autopilot modes
+    114:["set, speed","set, hding","set, vvi","dial, alt","vnav, alt","use, alt","sync, roll","sync, pitch"],//Autopilot values
+    115:["hdng, delta","pitch, delta","R, d/sec","Q, d/sec","rudd, ratio","elev, ratio","V, kts","dis, ft"],//Weapon status
+    116:["alt, set","vvi, set","alt, act","vvi, act","test, time","diff, psi","dump, all","bleed, src"],//Pressurization status
+    117:["APU, eqipd","APU, swtch","APU, runng","APU, N1","APU, genrt","GPU, power"],//Auxiliary power unit and ground power unit status
+    118:["targ, selct"],//Radar status
+    119:["hydr, pumpn","hydr, qtyn","hydr, presn"],//Hydraulic status
+    120:["busn, amp","busn, volt","engin, in W","solar, out W","batt, w-hr","Cross, tie"],//Electrical and solar power status
+    121:["inlet, ice","prop, ice","pitot, ice","statc, ice"],//Icing status 1
+    122:["aoa, ice","lwing, ice","rwing, ice","windo, ice"],//Icing status 2
+    123:["warn, time","caut, time","warn, work","caut, work","gear, work","gear, warn","stall, warn","VRS, ratio"],//Warning status
+    124:["leg, #","leg, type","leg, lat","leg, lon"],//Flight plan legs
+    125:["pedal, nobrk","pedal, wibrk","yoke, PFC","pedal, PFC","throt, PFC","cecon, PFC","switc, PFC","btogg, PFC"],//Hardware options
+    126:["camra, lon","camra, lat","camra, ele","camra, hdg","camra, pitch","camra, roll","camra, clou"],//Camera location
+    127:["cntr, X","cntr, Y","cntr, Z","slope, X","slope, Z"],//Ground location
+    128:["h-spd, kt","v-spd, fpm","mult, VxVVI"],//Climb statistics
+    129:["ff, pph","ff, gph","speed, mph","eta, smpg","eta, nm/lb","range, sm","endur, hours","mult, VxMPG"],//Cruise statistics
+}
